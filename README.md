@@ -114,7 +114,7 @@ while True:
     cv2.imshow('blur', final)
 
     # 검출 영역 표시
-   # temp = cv2.rectangle(temp, pt1=(face.left(), face.top()), pt2=(face.right(), face.bottom()), color = (0, 0, 255), thickness = 3, lineType=cv2.LINE_AA)
+    # temp = cv2.rectangle(temp, pt1=(face.left(), face.top()), pt2=(face.right(), face.bottom()), color = (0, 0, 255), thickness = 3, lineType=cv2.LINE_AA)
 
     # 특징점 표시
     #for s in shape_2d:
@@ -123,9 +123,9 @@ while True:
 
     if cv2.waitKey(30) & 0xFF == ord('q'):
         break
-  else:
-    break
+     else:
+        break
 
-cap.release()
-cv2.destroyAllWindows()
+    cap.release()
+    cv2.destroyAllWindows()
 ```
